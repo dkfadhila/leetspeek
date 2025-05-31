@@ -1,0 +1,102 @@
+/* Reset sederhana & Font Dasar */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #FFFFFF; /* Latar putih */
+    color: #333333; /* Font hitam/abu tua */
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Agar konten mulai dari atas jika halaman panjang */
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #FFFFFF;
+    padding: 25px;
+    border-radius: 8px;
+    /* box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); */ /* Opsional: bayangan halus */
+    width: 100%;
+    max-width: 600px; /* Batas lebar maksimum konten */
+}
+
+h1 {
+    color: #000000; /* Font hitam untuk judul */
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555555;
+}
+
+textarea {
+    width: calc(100% - 22px); /* Sesuaikan padding dan border */
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #A0D2DB; /* Warna pastel 1 untuk border */
+    font-size: 1em;
+    font-family: inherit;
+    resize: vertical; /* Izinkan resize vertikal saja */
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #FFCAD4; /* Warna pastel 2 untuk border saat fokus */
+    box-shadow: 0 0 5px rgba(255, 202, 212, 0.5); /* Bayangan halus saat fokus */
+}
+
+.options {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.options input[type="checkbox"] {
+    margin-right: 8px;
+    accent-color: #A0D2DB; /* Warna pastel 1 untuk checkbox */
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 12px 20px;
+    background-color: #A0D2DB; /* Warna pastel 1 untuk tombol */
+    color: #000000; /* Teks tombol hitam */
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #8ac1ca; /* Warna pastel 1 sedikit lebih gelap saat hover */
+}
+
+button:active {
+    background-color: #7aaeb5; /* Warna saat tombol ditekan */
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 1px solid #eeeeee; /* Garis pemisah tipis */
+    font-size: 0.9em;
+    color: #555555;
+}
+
+footer a {
+    color: #FFCAD4; /* Warna pastel 2 untuk link */
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
